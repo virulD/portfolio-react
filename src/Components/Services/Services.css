@@ -1,14 +1,14 @@
-.service-h1{
+/* .service-h1{
     display: flex;
     justify-content: center;
 }
 
  .parent-container{
-  display: flex; /* Enable flexbox on the parent container */
+  display: flex; 
   margin-top: -100px;
-  justify-content: center; /* Center child element horizontally */
-  align-items: center; /* Center child element vertically */
-  height: 100vh; /* Full viewport height to center vertically */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
  }
  .service-right{
   display: flex;
@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   height: auto; 
-  padding: 20px; 
+  padding: 10px; 
 }
 
 .service-right {
@@ -71,7 +71,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -90,4 +90,54 @@ html {
 }
 
 
+} */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.service-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: linear-gradient(270deg, #089fdf 10%, #B415FF 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  height: 550px;
+}
+
+.service-para {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 10px auto;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .service-right {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .service-para {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px auto;
+  }
 }
