@@ -31,7 +31,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: -300px;
 }
 
 .about-right {
@@ -71,9 +70,7 @@
     height: 280px; 
     margin: 0 auto; 
   }
-  .about-sections{
-    margin-top: -250px;
-  }
+
   .about-skills {
     flex-direction:row; 
     gap: 10px; 
