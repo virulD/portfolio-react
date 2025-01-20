@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import '../Hero/Hero.css'
+import '../About/About.css'
 import profile_img from '../../assets/profile-pic.png'
 import LinkedIn_icon from '../../assets/LinkedIn_icon.png'
 
