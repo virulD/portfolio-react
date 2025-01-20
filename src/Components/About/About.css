@@ -71,6 +71,10 @@
 }
 
 @media(max-width:768px){
+  .about-para{
+    font-size:1rem;
+    line-height: 1.5;
+  }
 
   .about-right{
     margin: 0 auto;
@@ -80,4 +84,17 @@
     align-items: center; 
     text-align: center;
   }
+  .about-skills{
+    flex-direction: column;
+    gap: 10px;
+  }
+  html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+  box-sizing: border-box;
+  }
+
+
 }
