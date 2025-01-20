@@ -27,30 +27,32 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .service-para {
-  color: #ffffff; /* Retain the light blue color */
-  font-size: 18px; /* Adjust font size for readability */
-  line-height: 1.8; /* Better spacing between lines */
-  font-weight: 500; /* Slightly bold text for emphasis */
-  margin-bottom: 20px; /* Add spacing between paragraphs */
-  text-decoration: none; /* Remove underline for a cleaner look */
+  color: #ffffff; 
+  font-size: 18px;
+  line-height: 1.8; 
+  font-weight: 500; 
+  margin-bottom: 20px; 
+  text-decoration: none; 
 }
 
 
 .service-para p {
   margin-top: 20px;
-  margin-bottom: 15px; /* Add space between paragraphs */
-  text-align: justify; /* Align text evenly for a clean layout */
+  margin-bottom: 15px; 
+  text-align: justify; 
 }
 
 .service-para p:last-child {
-  margin-bottom: 0; /* Remove margin after the last paragraph */
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .service-right {
-    margin: 0 auto; /* Centers the element horizontally */
-    display: flex; /* Ensures flexbox can be applied */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically (if it has a height) */
+    margin: 0 auto;
+    font-size: 12px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     text-align:start;
+    
   }
 }
