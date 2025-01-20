@@ -28,18 +28,18 @@
     height: 100px;
 }
 .nav-menu li a {
-  text-decoration: none; /* Remove underline by default */
-  color: inherit; /* Maintain text color */
-  transition: all 0.3s ease; /* Smooth hover effect */
+  text-decoration: none;
+  color: inherit; 
+  transition: all 0.3s ease;
 }
 
 .nav-menu li a:hover {
-  color: #5308df; /* Hover color */
+  color: #5308df; 
 }
 
 .nav-menu li a.active {
-  color: #5308df; /* Active color (matches hover) */
-  font-weight: bold; /* Optional: Emphasize the active item */
+  color: #5308df; 
+  font-weight: bold; 
 }
 .nav-mob-close{
   display: none;
@@ -61,11 +61,11 @@
   }
   .nav-mob-close {
     display: block;
-    position: absolute; /* Or use fixed if you want it to stay in the corner while scrolling */
-    top: 0; /* Adjust this value as needed */
-    right: 10px; /* Adjust this value as needed */
+    position: absolute; 
+    top: 0; 
+    right: 10px; 
     width: 30px;
-    margin: 0; /* Remove margin if it's not necessary */
+    margin: 0; 
   }
   .nav-menu{
     position: fixed;

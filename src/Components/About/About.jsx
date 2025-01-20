@@ -10,9 +10,6 @@ const About = () => {
         
       </div>
       <div className="about-sections">
-        {/* <div className="about-left">
-            <img className='pp'src={profile_img} alt="" />
-        </div> */}
         <div className="about-right">
           <div className="about-para">
             <p>Hi, I’m Virul Akbo De Silva, an enthusiastic undergraduate student and <br/>passionate full-stack web developer. I specialize in designing and building<br/> dynamic, user-friendly websites and web applications using modern<br/> technologies. </p>
