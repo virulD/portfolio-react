@@ -2,8 +2,7 @@
 import React from 'react'
 import '../Hero/Hero.css'
 import profile_img from '../../assets/profile-pic.png'
-// import linkedin_icon from '../../assets/LinkedIn_icon.png'
-import LinkedinIcon from '@assets/Linkedin_icon.png';
+import LinkedIn_icon from '../../assets/LinkedIn_icon.png'
 
 import github_icon from '../../assets/github_icon.png'
 import react_icon from '../../assets/react_icon.png'
@@ -26,7 +25,7 @@ const Hero = () => {
             </div> 
             <div className='link-buttons'>
                 <a href={linkedInUrl}target="_blank" rel="noopener noreferrer">
-                    <img className="linkedin-logo" src={LinkedinIcon} alt="LinkedIn" />
+                    <img className="linkedin-logo" src={LinkedIn_icon} alt="LinkedIn" />
                 </a>
                 <a href={githubUrl}target="_blank" rel="noopener noreferrer">
                     <img className="github_logo" src={github_icon} alt="github" />
