@@ -1,0 +1,89 @@
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.btn-conactme{
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#089fdf 10%,#B415FF 100%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-conactme:hover{
+    transform: scale(1.05);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.nav-menu li a {
+  text-decoration: none; /* Remove underline by default */
+  color: inherit; /* Maintain text color */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-menu li a:hover {
+  color: #5308df; /* Hover color */
+}
+
+.nav-menu li a.active {
+  color: #5308df; /* Active color (matches hover) */
+  font-weight: bold; /* Optional: Emphasize the active item */
+}
+.nav-mob-close{
+  display: none;
+}
+.nav-mob-open{
+  display: none;
+}
+@media(max-width:768px){
+  .NavBar{
+    margin: 20px;
+  }
+  .btn-conactme{
+    display: none;
+  }
+  .nav-mob-open{
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: absolute; /* Or use fixed if you want it to stay in the corner while scrolling */
+    top: 0; /* Adjust this value as needed */
+    right: 10px; /* Adjust this value as needed */
+    width: 30px;
+    margin: 0; /* Remove margin if it's not necessary */
+  }
+  .nav-menu{
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 40px;
+    gap: 30px;
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    height: 100%;
+    z-index:2 ;
+    transition: right 0.5s;
+    right: -350px;
+  }
+  .nav-menu li{
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}

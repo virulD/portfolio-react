@@ -1,0 +1,82 @@
+.pp{
+
+    width: 420px;
+    height: 420px; 
+    margin-left: 20px;
+    border-radius: 20px;
+    
+}
+
+.about-skills {
+  
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  gap: 20px; /* Adjusts spacing between images */
+  margin-top: 20px; /* Adds spacing above the images if needed */
+}
+
+
+
+.about-skills img:hover {
+  transform: scale(1.3); /* Adds a hover effect to enlarge the icons slightly */
+}
+
+.about-title{
+  display: flex;
+  flex-direction: column;
+  color: linear-gradient(270deg,#089fdf 10%,#B415FF 100%);
+  align-items: center;
+  margin-top: 3px;
+}
+.about-sections{
+  display: flex; 
+  margin-top:-100px;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  
+}
+ .about-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -50px; 
+  background: linear-gradient(270deg, #089fdf 10%, #B415FF 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 450px;
+}
+
+
+
+.about-para {
+  color: #ffffff; 
+  font-size: 18px; 
+  line-height: 1.8;
+  font-weight: 500; 
+  margin-bottom: 20px; 
+  text-decoration: none;
+}
+
+
+.about-para p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: justify; 
+}
+
+.about-para p:last-child {
+  margin-bottom: 0; 
+}
+
+@media(max-width:768px){
+
+  .about-right{
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  }
+}
