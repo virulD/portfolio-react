@@ -2,7 +2,7 @@
 import React from 'react'
 import '../Hero/Hero.css'
 import profile_img from '../../assets/profile-pic.png'
-import linkedin_icon from '../../assets/Linkedin_icon.png'
+import linkedin_icon from '../../assets/LinkedIn_icon.png'
 import github_icon from '../../assets/github_icon.png'
 import react_icon from '../../assets/react_icon.png'
 import nodejs_icon from '../../assets/nodejs_icon.png'
