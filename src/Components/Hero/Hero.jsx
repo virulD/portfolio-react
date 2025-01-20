@@ -16,10 +16,10 @@ const Hero = () => {
   return (
       <div className='hero'>
           <img className ='pp'src={profile_img} alt="" />
-          <h1><span>I m Virul De silva</span> </h1>
-          <p>Full-Stack Web Developer from Sri Lanka with 3 years of Experince</p>
+          <h1>Hello👋 I&apos;m <span>Virul De silva</span> </h1>
+          <p>Full-Stack Web Developer From Sri Lanka With Years Of Experince🖥️</p>
             <div className='hero-action'>
-              <div className="hero-connect"> CONNECT VIA </div>
+              <div className="hero-connect"> CONNECT VIA👇 </div>
               
             </div> 
             <div className='link-buttons'>
