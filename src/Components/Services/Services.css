@@ -37,6 +37,9 @@ html {
 }
 
 @media (max-width: 768px) {
+  .parent-container{
+    margin-top: 30px;
+  }
   .service-right {
     width: 90%;
     max-width: 400px;

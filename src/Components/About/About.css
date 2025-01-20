@@ -71,7 +71,9 @@
     height: 280px; 
     margin: 0 auto; 
   }
-
+  .about-sections{
+    margin-top: -250px;
+  }
   .about-skills {
     flex-direction:row; 
     gap: 10px; 
@@ -79,7 +81,7 @@
   }
 
   .about-skills img {
-    width: 50px;
+    width: 60px;
     height: 50px; 
   }
 
