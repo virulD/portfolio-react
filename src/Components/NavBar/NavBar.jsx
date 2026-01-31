@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Code2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,6 +8,7 @@ import Button, { cn } from '../UI/Button';
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const navRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,8 +19,22 @@ const NavBar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [isOpen]);
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (isOpen && navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isOpen]);
+
     return (
         <nav
+            ref={navRef}
             className={cn(
                 'fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b',
                 scrolled
