@@ -12,10 +12,11 @@ const NavBar = () => {
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
+            if (isOpen) setIsOpen(false);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [isOpen]);
 
     return (
         <nav
